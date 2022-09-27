@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Accessibility } from "./accessibility";
-import { MenuToggle } from "./menuToggle";
+import { SystemLogin } from "./systemLogin";
+import { MenuToggle } from "./navMenuToggle";
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -53,19 +53,16 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <Link href="#">About us</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">How it works</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Explore</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Impact</Link>
-          </LinkItem>
+          <Link href="#">Home</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="#">Dashboard</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="#">Utilities</Link>
+        </LinkItem>
           <Marginer />
-          <Accessibility />
+          <SystemLogin />
         </LinksWrapper>
       )}
     </NavLinksContainer>

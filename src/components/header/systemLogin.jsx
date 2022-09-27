@@ -51,7 +51,7 @@ const LoginButton = styled.button`
   }
 `;
 
-export function Accessibility(props) {
+export function SystemLogin(props) {
   return (
     <AccessibilityContainer>
       <RegisterButton>Register</RegisterButton>

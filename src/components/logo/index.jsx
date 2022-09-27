@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GreenlandLogoImg from "../../assets/images/logo.png";
+import GreenlandLogoImg from "../../assets/images/GPGLogo.png";
 
 const LogoWrapper = styled.div`
   display: flex;
@@ -8,8 +8,8 @@ const LogoWrapper = styled.div`
 `;
 
 const LogoImg = styled.div`
-  width: 29px;
-  height: 29px;
+  width: auto ;
+  height: 60px;
 
   img {
     width: 100%;
@@ -29,9 +29,9 @@ export function Logo(props) {
   return (
     <LogoWrapper>
       <LogoImg>
-        <img src={GreenlandLogoImg} alt="Greenland logo" />
+        <img src={GreenlandLogoImg} alt="Garvin Promotion Group logo" />
       </LogoImg>
-      <LogoText>Greenland</LogoText>
+      {/* <LogoText>Greenland</LogoText> */}
     </LogoWrapper>
   );
 }
